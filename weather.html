@@ -2,26 +2,26 @@
 <!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
 <html>
   <head>
-  	<title>Weather API</title>
+	  <title>Weather API</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="weather.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="weather.js"></script>
+	<script src="skycons.js"></script>
   </head>
   <body>
-  	<div>
-  	  <input>
-  	  <button>Check weather</button>
-  	</div>
-  	
-  	<div  id= weatherList>
-  	  <h1>Weather right now</h1>
-  	  <div>
-  	  	<h3>San Francisco</h3>
-  	  	<p>Sunny</p>
-  	  </div>
-  	</div>
-  	
+	<div class="location">
+		<h1 class = "location-timezone">Timezone</h1>
+		<canvas class="icon" width="128" height="128"></canvas>
+	</div>
+	<div class = "temperature">
+		<div class="degree-section">
+			<h2 class="temperature-degree">34</h2>
+			<span>F</span>
+		</div>
+		<div class="temperature-description">Cold</div>
+	</div>
   </body>
 </html>
